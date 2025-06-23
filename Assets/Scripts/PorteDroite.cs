@@ -9,7 +9,9 @@ public class PorteDroite : MonoBehaviour
 
     private float originalX;
     private bool canMove = false;
-    private bool goingRight = true;
+
+    private int etat = 1;
+    private float timer = 0f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     async void Start()
@@ -21,7 +23,6 @@ public class PorteDroite : MonoBehaviour
         Debug.Log("Apres delay 1");
 
         canMove = true;
-        Debug.Log(originalX);
     }
 
     // Update is called once per frame
@@ -32,8 +33,9 @@ public class PorteDroite : MonoBehaviour
             return;
         }
 
-        if (goingRight) 
+        if (etat == 1)
         {
+            Debug.Log("Ouverture de porte");
             if (direction == 1)
             {
                 if (transform.position.x < maxX)
@@ -43,7 +45,8 @@ public class PorteDroite : MonoBehaviour
 
                 else
                 {
-                    goingRight = false;
+                    etat = 2;
+                    timer = 0f;
                 }
             }
 
@@ -56,38 +59,59 @@ public class PorteDroite : MonoBehaviour
 
                 else
                 {
-                    goingRight = false;
+                    etat = 2;
+                    timer = 0f;
                 }
             }
         }
 
-        else
+        else if (etat == 2) 
         {
+            Debug.Log("Attente de 2s");
+            timer += Time.deltaTime;
+
+            if (timer > 2f)
+            {
+                etat = 3;
+            }
+        }
+
+        else if (etat == 3)
+        {
+            Debug.Log("Fermeture de porte");
             if (direction == 1)
             {
                 if (transform.position.x > originalX)
                 {
-                    transform.position += new Vector3(-speed * Time.deltaTime, 0f, 0f);
+                    transform.position += new Vector3(-speed, 0f, 0f) * Time.deltaTime;
                 }
 
                 else
                 {
-                    goingRight = true;
+                    etat = 4;
+                    canMove = false;
                 }
             }
 
-            else if (direction == 2)
+            else if(direction == 2)
             {
                 if (transform.position.x < originalX)
                 {
-                    transform.position += new Vector3(-speed * Time.deltaTime, 0f, 0f);
+                    transform.position += new Vector3(-speed, 0f, 0f) * Time.deltaTime;
                 }
 
                 else
                 {
-                    goingRight = true;
+                    etat = 4;
+                    canMove = false;
                 }
             }
+        }
+
+        else if (etat == 4)
+        {
+            Debug.Log("Fin");
+            return;
         }
     }
 }
