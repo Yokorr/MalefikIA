@@ -3,9 +3,11 @@ using UnityEngine;
 
 public class PorteDroite : MonoBehaviour
 {
-    public float speed;
-    public float maxX;  // 3.55
-    public int direction;
+    public int delay = 5;
+
+    public float speed = 1;
+    public float maxX = 3.55f;
+    public int direction = 1;
 
     private float originalX;
     private bool canMove = false;
@@ -19,7 +21,7 @@ public class PorteDroite : MonoBehaviour
         originalX = transform.position.x;
 
         Debug.Log("Avant delay 1");
-        await Task.Delay(5000);
+        await Task.Delay(delay * 1000);
         Debug.Log("Apres delay 1");
 
         canMove = true;
