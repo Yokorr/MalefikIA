@@ -347,6 +347,7 @@ GameObject:
   - component: {fileID: 314477933}
   - component: {fileID: 314477932}
   - component: {fileID: 314477931}
+  - component: {fileID: 314477935}
   m_Layer: 0
   m_Name: Porte1-Gauche
   m_TagString: Untagged
@@ -443,6 +444,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &314477935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314477930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0a9bcdd169f18d4682dace2d3160055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: -1
+  maxX: -3.55
+  direction: 2
 --- !u!1 &819521427
 GameObject:
   m_ObjectHideFlags: 0
@@ -681,13 +697,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 841312503}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.51301706, y: 0, z: 0, w: 0.85837847}
+  m_LocalPosition: {x: 0, y: 5.74, z: -2.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 61.73, y: 0, z: 0}
 --- !u!1 &1606654314
 GameObject:
   m_ObjectHideFlags: 0
@@ -910,13 +926,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1650870203}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.6830127, y: -0.18301266, z: 0.18301266, w: 0.6830127}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: -30, z: 0}
 --- !u!1 &1704370336
 GameObject:
   m_ObjectHideFlags: 0
@@ -1037,6 +1053,7 @@ GameObject:
   - component: {fileID: 1785550618}
   - component: {fileID: 1785550617}
   - component: {fileID: 1785550616}
+  - component: {fileID: 1785550620}
   m_Layer: 0
   m_Name: Porte1-Droite
   m_TagString: Untagged
@@ -1133,6 +1150,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1785550620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785550615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0a9bcdd169f18d4682dace2d3160055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  maxX: 3.55
+  direction: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
