@@ -18,7 +18,7 @@ public class PorteAvant : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     async void Start()
     {
-        originalX = maxX > 0 ? 1.25f : -1.25f;
+        originalX = transform.position.x - (maxX > 0 ? 2.3f : -2.3f);
 
         Debug.Log("Avant delay 1");
         await Task.Delay(delay * 1000);
@@ -37,8 +37,7 @@ public class PorteAvant : MonoBehaviour
 
         else if (etat == 2) 
         {
-            transform.position = new Vector3(maxX, 2.4f, -2.4f);
-            Debug.Log("Attente de 2s");
+            //Debug.Log("Attente de 2s");
             timer += Time.deltaTime;
 
             if (timer > 2f)
@@ -49,7 +48,8 @@ public class PorteAvant : MonoBehaviour
 
         else if (etat == 3)
         {
-            Debug.Log("Fermeture de porte");
+            Debug.Log(transform.position);
+            //Debug.Log("Fermeture de porte");
             if (direction == 1)
             {
                 if (transform.position.x > originalX)

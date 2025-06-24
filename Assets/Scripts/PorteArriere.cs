@@ -18,7 +18,7 @@ public class PorteArriere : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     async void Start()
     {
-        originalX = transform.position.x;
+        maxX = transform.position.x + (maxX > 0 ? 2.3f : -2.3f);
 
         Debug.Log("Avant delay 1");
         await Task.Delay(delay * 1000);
