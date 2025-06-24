@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
 using UnityEngine;
 
-public class PorteDroite : MonoBehaviour
+public class Porte : MonoBehaviour
 {
     public int delay = 5;
 
