@@ -119,7 +119,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &1343377979
+--- !u!1001 &784645553
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -129,15 +129,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 206026407696797827, guid: 6ac06b73f4d191f41b451176d2ca7ae0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 206026407696797827, guid: 6ac06b73f4d191f41b451176d2ca7ae0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 206026407696797827, guid: 6ac06b73f4d191f41b451176d2ca7ae0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 206026407696797827, guid: 6ac06b73f4d191f41b451176d2ca7ae0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -167,10 +167,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1958616143256971202, guid: 6ac06b73f4d191f41b451176d2ca7ae0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3.55
-      objectReference: {fileID: 0}
     - target: {fileID: 5805576506264762761, guid: 6ac06b73f4d191f41b451176d2ca7ae0, type: 3}
       propertyPath: m_Name
       value: Ascenseur
@@ -184,4 +180,4 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1343377979}
+  - {fileID: 784645553}
