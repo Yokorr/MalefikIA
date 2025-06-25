@@ -4,6 +4,7 @@ public class GestionDisquette : MonoBehaviour
 {
     public int nbDisquettes = 0;
     public int nbPoints = 0;
+
     // Cette fonction est appelée chaque fois que le joueur heurte un autre collider
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
@@ -28,5 +29,10 @@ public class GestionDisquette : MonoBehaviour
                 Debug.LogWarning("Le chevalet a été touché, mais aucune lumière enfant n'a été trouvée.");
             }
         }
+    }
+
+    public void AddDisquette()
+    {
+        nbDisquettes++;
     }
 }
