@@ -28,9 +28,13 @@ public class GestionDisquette : MonoBehaviour
             // ÉTAPE 3: On vérifie qu'on a bien trouvé une lumière (c'est une bonne pratique pour éviter les erreurs)
             if (lumiereDuChevalet != null)
             {
-                // ÉTAPE 4: On change la couleur de la lumière en rouge.
-                lumiereDuChevalet.color = Color.red;
-                nbPoints++;
+                if(lumiereDuChevalet.color != Color.red)
+                {
+                    // ÉTAPE 4: On change la couleur de la lumière en rouge.
+                    lumiereDuChevalet.color = Color.red;
+                    nbPoints++;
+                }
+                
 
                 // Optionnel : un message pour confirmer que ça a fonctionné
                 Debug.Log("La lumière du chevalet est passée au rouge !");
