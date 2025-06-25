@@ -8155,10 +8155,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 340012908275651782, guid: 83883a1131365764ba1892b6701d67e4, type: 3}
-      propertyPath: nextScene
-      value: ascenseur 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 340012908275651782, guid: 83883a1131365764ba1892b6701d67e4, type: 3}
       propertyPath: nbDisquettesNecessaire
       value: 4
       objectReference: {fileID: 0}
