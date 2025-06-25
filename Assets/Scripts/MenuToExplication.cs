@@ -2,21 +2,32 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-
 public class MenuToExplication : MonoBehaviour
 {
     public Button play;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public Button settings;
+    public Button exit;
+
     void Start()
     {
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
         play.onClick.AddListener(PlayGame);
+        settings.onClick.AddListener(OpenSettings);
+        exit.onClick.AddListener(ExitGame);
     }
 
-    // Update is called once per frame
     public void PlayGame()
     {
         SceneManager.LoadScene("Explication");
+    }
+
+    public void OpenSettings()
+    {
+        SceneManager.LoadScene("Settings"); // Assure-toi que la scène "Settings" existe dans le Build Settings
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+        Debug.Log("Game is exiting..."); // Utile pour tester dans l'éditeur, car Application.Quit() ne fonctionne pas dans l'éditeur
     }
 }

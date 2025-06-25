@@ -5,7 +5,6 @@ public class AudioManager : MonoBehaviour
 {
     public float delay = 5f;
     public GameObject audioClip1;
-    public GameObject audioClip2;
 
     private float timer = 0f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -22,7 +21,6 @@ public class AudioManager : MonoBehaviour
         if (timer > delay)
         {
             audioClip1.gameObject.SetActive(true);
-            audioClip2.gameObject.SetActive(true);
         }
     }
 }

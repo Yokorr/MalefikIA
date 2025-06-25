@@ -1,5 +1,6 @@
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PorteArriere : MonoBehaviour
 {
@@ -9,11 +10,14 @@ public class PorteArriere : MonoBehaviour
     public float maxX = 3.55f;
     public int direction = 1;
 
+    public string sceneName;
+
     private float originalX;
     private bool canMove = false;
 
     private int etat = 1;
     private float timer = 0f;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     async void Start()
@@ -74,14 +78,18 @@ public class PorteArriere : MonoBehaviour
 
             if (timer > 2f)
             {
+                timer = 0f;
                 etat = 4;
             }
         }
 
         else if (etat == 4)
         {
-            Debug.Log("Fin");
-            return;
+            //timer += Time.deltaTime;
+            //if (timer > 2f)
+            //{
+                SceneManager.LoadScene(sceneName);
+            //}
         }
     }
 }
