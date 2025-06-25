@@ -6,6 +6,7 @@ public class CameraManager : MonoBehaviour
     public GameObject Camera1;
     public GameObject Camera2;
 
+    public float delay = 10f;
     private float timer = 0f;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -20,7 +21,7 @@ public class CameraManager : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if (timer > 12f)
+        if (timer > delay)
         {
             Camera1.gameObject.SetActive(false);
             Camera2.gameObject.SetActive(true);
