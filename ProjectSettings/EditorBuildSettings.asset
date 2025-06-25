@@ -29,6 +29,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ascenseur 1er.unity
     guid: b0f8c788423c815418a53cbe7f7e1e64
+  - enabled: 1
+    path: Assets/Scenes/ascenseur 1.unity
+    guid: 3eb44e1cb553a824380f8c68b0f3dd12
+  - enabled: 1
+    path: Assets/Scenes/ascenseur 2.unity
+    guid: 4aafbcf6bcb008f45911a51be1775801
+  - enabled: 1
+    path: Assets/Scenes/Fail.unity
+    guid: 83a4a4292c414cf479ca47f93b18ff8f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
