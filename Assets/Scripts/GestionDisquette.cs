@@ -1,9 +1,19 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GestionDisquette : MonoBehaviour
 {
     public int nbDisquettes = 0;
     public int nbPoints = 0;
+    public string endScene = "end";
+
+    private void Update()
+    { 
+        if(nbPoints == 4)
+        {
+            SceneManager.LoadScene(endScene);
+        }
+    }
 
     // Cette fonction est appelée chaque fois que le joueur heurte un autre collider
     private void OnControllerColliderHit(ControllerColliderHit hit)
@@ -20,6 +30,7 @@ public class GestionDisquette : MonoBehaviour
             {
                 // ÉTAPE 4: On change la couleur de la lumière en rouge.
                 lumiereDuChevalet.color = Color.red;
+                nbPoints++;
 
                 // Optionnel : un message pour confirmer que ça a fonctionné
                 Debug.Log("La lumière du chevalet est passée au rouge !");
