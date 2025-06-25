@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class NextScene : MonoBehaviour
 {
+    public string nextScene;
+
     void OnTriggerEnter(Collider touch)
     {
         if (touch.CompareTag("Player"))
@@ -14,7 +16,7 @@ public class NextScene : MonoBehaviour
             {
                 if (player.nbDisquettes == 4)
                 {
-                    SceneManager.LoadScene("ascenseur");
+                    SceneManager.LoadScene(nextScene);
                 }
             }
             
