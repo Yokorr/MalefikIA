@@ -154,8 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 9
-  audioClip1: {fileID: 1963036103}
-  audioClip2: {fileID: 1543014767}
+  audioClip1: {fileID: 1543014767}
 --- !u!4 &340094802
 Transform:
   m_ObjectHideFlags: 0
@@ -227,9 +226,17 @@ PrefabInstance:
       propertyPath: delay
       value: 65
       objectReference: {fileID: 0}
+    - target: {fileID: 353878965707524387, guid: 6ac06b73f4d191f41b451176d2ca7ae0, type: 3}
+      propertyPath: sceneName
+      value: jump
+      objectReference: {fileID: 0}
     - target: {fileID: 5407690591083081515, guid: 6ac06b73f4d191f41b451176d2ca7ae0, type: 3}
       propertyPath: delay
       value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407690591083081515, guid: 6ac06b73f4d191f41b451176d2ca7ae0, type: 3}
+      propertyPath: sceneName
+      value: jump
       objectReference: {fileID: 0}
     - target: {fileID: 5805576506264762761, guid: 6ac06b73f4d191f41b451176d2ca7ae0, type: 3}
       propertyPath: m_Name
@@ -397,7 +404,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1963036104
 Transform:
   m_ObjectHideFlags: 0
