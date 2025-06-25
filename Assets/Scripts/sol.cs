@@ -20,7 +20,7 @@ public class sol : MonoBehaviour
     {
         if (touch.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Menu");
+            SceneManager.LoadScene("Fail");
         }
     }
 }
