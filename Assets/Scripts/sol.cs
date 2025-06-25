@@ -18,7 +18,7 @@ public class sol : MonoBehaviour
     }
     void OnTriggerEnter(Collider touch)
     {
-        if (touch.gameObject.name == "Capsule")
+        if (touch.CompareTag("Player"))
         {
             SceneManager.LoadScene("Menu");
         }
