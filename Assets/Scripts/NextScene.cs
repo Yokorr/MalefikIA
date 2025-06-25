@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class NextScene : MonoBehaviour
 {
     public string nextScene;
+    public int nbDisquettesNecessaire;
 
     void OnTriggerEnter(Collider touch)
     {
@@ -14,7 +15,7 @@ public class NextScene : MonoBehaviour
             GestionDisquette player = touch.GetComponent<GestionDisquette>();
             if (player != null)
             {
-                if (player.nbDisquettes == 4)
+                if (player.nbDisquettes == nbDisquettesNecessaire)
                 {
                     SceneManager.LoadScene(nextScene);
                 }
