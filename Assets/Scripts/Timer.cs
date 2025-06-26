@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro; 
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameTimer : MonoBehaviour
 {
@@ -36,6 +37,7 @@ public class GameTimer : MonoBehaviour
     {
         // Action à effectuer lorsque le temps est écoulé
         Debug.Log("Temps écoulé! Fin de la partie.");
+        SceneManager.LoadScene("Fail");
         // Vous pouvez charger une autre scène ou effectuer d'autres actions ici
         // Par exemple, SceneManager.LoadScene("GameOverScene");
     }
