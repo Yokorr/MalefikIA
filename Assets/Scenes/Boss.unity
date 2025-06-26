@@ -11680,7 +11680,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nbDisquettes: 4
   nbPoints: 0
-  endScene: end
+  endScene: SceneButtonEnd
 --- !u!1 &1983655685
 GameObject:
   m_ObjectHideFlags: 0
