@@ -8,6 +8,8 @@ public class Replay : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         if (replay != null)
         {
             replay.onClick.AddListener(PlayGame);
@@ -24,6 +26,6 @@ public class Replay : MonoBehaviour
 
     public void ExitGame()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("NewMenu");
     }
 }

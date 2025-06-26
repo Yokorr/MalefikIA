@@ -15,6 +15,6 @@ public class ReturnMenu : MonoBehaviour
 
     public void ExitGame()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("NewMenu");
     }
 }
