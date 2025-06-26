@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameTimer : MonoBehaviour
 {
-    public float timeRemaining = 60f; // Temps restant en secondes
+    public float timeRemaining = 120f; // Temps restant en secondes
     public TextMeshProUGUI timerText; // Référence à un objet UI Text pour afficher le temps
 
     void Start()
@@ -29,7 +29,7 @@ public class GameTimer : MonoBehaviour
 
     void UpdateTimerDisplay()
     {
-        int seconds = Mathf.FloorToInt(timeRemaining % 60);
+        int seconds = Mathf.FloorToInt(timeRemaining % 120);
         timerText.text = string.Format("Temps restant: {0:00}", seconds);
     }
 
