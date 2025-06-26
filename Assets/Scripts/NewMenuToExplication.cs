@@ -22,7 +22,7 @@ public class NewMenuToExplication : MonoBehaviour
 
     public void OpenSettings()
     {
-        SceneManager.LoadScene("Settings"); // Assure-toi que la scène "Settings" existe dans le Build Settings
+        SceneManager.LoadScene("Commande"); // Assure-toi que la scène "Settings" existe dans le Build Settings
     }
 
     public void ExitGame()

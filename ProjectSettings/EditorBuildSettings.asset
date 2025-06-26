@@ -44,6 +44,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FinDead.unity
     guid: 208ed32e80c090642807ed5be5fb61de
+  - enabled: 1
+    path: Assets/Scenes/Commande.unity
+    guid: 6cb029db0fd73084c98c3041b5066671
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
