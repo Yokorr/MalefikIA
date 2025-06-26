@@ -9,23 +9,20 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: aac98d24c40615347bbbb3eeb2b40fd8
   - enabled: 1
-    path: Assets/Scenes/jump.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/Explication.unity
+    guid: a7fe3d4eadcab6246890c3d900a69a3d
   - enabled: 1
     path: Assets/Scenes/ascenseur.unity
     guid: 22bc19575df1b5545a7d3129cda3150c
   - enabled: 1
-    path: Assets/Scenes/Boss.unity
-    guid: 5ddc201c4c8b2134f845bb193ec7ae03
-  - enabled: 1
-    path: Assets/Scenes/end.unity
-    guid: fa6b836ab562afc47befd22c5aa04270
-  - enabled: 1
-    path: Assets/Scenes/Explication.unity
-    guid: a7fe3d4eadcab6246890c3d900a69a3d
-  - enabled: 1
     path: Assets/Scenes/labyrinthe.unity
     guid: 46d533fdc0f6ee54ba172ec37e9d816a
+  - enabled: 1
+    path: Assets/Scenes/jump.unity
+    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Boss.unity
+    guid: 5ddc201c4c8b2134f845bb193ec7ae03
   - enabled: 1
     path: Assets/Scenes/ascenseur 1er.unity
     guid: b0f8c788423c815418a53cbe7f7e1e64
@@ -38,6 +35,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fail.unity
     guid: 83a4a4292c414cf479ca47f93b18ff8f
+  - enabled: 1
+    path: Assets/Scenes/SceneButtonEnd.unity
+    guid: d4f0ab2a5ea42d7489e6832b4d99022d
   - enabled: 1
     path: Assets/Scenes/FinAlive.unity
     guid: 049255d6b692a1e4288034d087b2dfd3
