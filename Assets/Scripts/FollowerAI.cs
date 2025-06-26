@@ -8,6 +8,7 @@ public class FollowerAI : MonoBehaviour
     private NavMeshAgent agent;
     private Transform playerTransform;
     private Vector3 startingPosition;
+    public string sceneEchec = "Fail";
 
     [Header("Paramètres de l'IA")]
     public float aggroRange = 15f;
@@ -56,7 +57,7 @@ public class FollowerAI : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Menu");
+            SceneManager.LoadScene(sceneEchec);
         }
     }
 }
