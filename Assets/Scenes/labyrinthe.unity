@@ -176,7 +176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Suit Boost : speet'
+  m_text: 'Suit Boost : speed'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1319,7 +1319,7 @@ Transform:
   m_GameObject: {fileID: 725578337}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.9998469, z: -0, w: 0.017499156}
-  m_LocalPosition: {x: -44.84, y: 1.12, z: 50.82}
+  m_LocalPosition: {x: -45, y: 1, z: 53.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
