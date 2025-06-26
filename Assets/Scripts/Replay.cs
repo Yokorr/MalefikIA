@@ -26,6 +26,6 @@ public class Replay : MonoBehaviour
 
     public void ExitGame()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("NewMenu");
     }
 }
