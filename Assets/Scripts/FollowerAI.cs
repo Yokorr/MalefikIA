@@ -52,7 +52,15 @@ public class FollowerAI : MonoBehaviour
         }
     }
 
-    
+    private void OnDrawGizmosSelected()
+    {
+        // On dessine une sphère de couleur rouge semi-transparente
+        Gizmos.color = new Color(1, 0, 0, 0.25f);
+        // La sphère est centrée sur l'ennemi et son rayon est notre zone d'agression.
+        Gizmos.DrawSphere(transform.position, aggroRange);
+    }
+
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))

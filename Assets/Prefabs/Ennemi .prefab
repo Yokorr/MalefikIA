@@ -267,7 +267,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555af1a5107008243ab26f3f17b0d5cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aggroRange: 20
+  sceneEchec: Fail
+  aggroRange: 27
 --- !u!1 &6339897954548000446
 GameObject:
   m_ObjectHideFlags: 0
